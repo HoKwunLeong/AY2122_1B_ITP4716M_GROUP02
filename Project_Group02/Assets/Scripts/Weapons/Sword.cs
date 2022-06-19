@@ -56,6 +56,7 @@ public class Sword : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Monster"))
         {
+            FindObjectOfType<AudioManager>().Play("MonsterHurt");
             other.gameObject.GetComponent<EnemiesData>().SetHealth(other.gameObject.GetComponent<EnemiesData>().GetHealth() - Weapon.attack);
             other.transform.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.forward * Force, ForceMode.Impulse);
             if (other.transform.gameObject.GetComponent<BossMovement>())

@@ -89,6 +89,7 @@ public class CrossbowLock : MonoBehaviour
 
         if (Physics.Raycast(CrossbowCamara.transform.position, CrossbowCamara.transform.forward, out hit, range) && hit.collider.tag == "Monster")
         {
+            FindObjectOfType<AudioManager>().Play("MonsterHurt");
             Debug.DrawLine(CrossbowCamara.transform.position, hit.transform.position, Color.red, 0.5f, true);
             hit.transform.gameObject.GetComponent<EnemiesData>().SetHealth(hit.transform.gameObject.GetComponent<EnemiesData>().GetHealth() - Weapon.attack);
             hit.transform.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.forward * -Force, ForceMode.Impulse);

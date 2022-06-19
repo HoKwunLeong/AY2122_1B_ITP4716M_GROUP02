@@ -21,6 +21,7 @@ public class Skeleton : MonoBehaviour
 
     void Update()
     {
+        FindObjectOfType<AudioManager>().Play("SkeletonWalk");
         Vector3 v3Pos = transform.position;
         v3Pos.y = 0f;
 

@@ -22,6 +22,7 @@ public class Mummy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        FindObjectOfType<AudioManager>().Play("MummyWalk");
         Vector3 v3Pos = transform.position;
         v3Pos.y = 0f;
 

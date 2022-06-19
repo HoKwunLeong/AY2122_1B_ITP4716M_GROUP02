@@ -75,14 +75,32 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: AkFire
-    clip: {fileID: 8300000, guid: 35d3bd0fa23194343b05b2c33aa64c45, type: 3}
-    volume: 0.107
+    clip: {fileID: 8300000, guid: 55cc1b99e4339db4bb0684f3d603739c, type: 3}
+    volume: 0.05
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: AkReload
     clip: {fileID: 8300000, guid: 3cecf227804b0a144aa5f192c0532d52, type: 3}
-    volume: 0.107
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MummyWalk
+    clip: {fileID: 8300000, guid: 769a8180864f8d14bae296556b14096c, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SkeletonWalk
+    clip: {fileID: 8300000, guid: c589d58a3f0e03a4aa93563fa2337699, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MonsterHurt
+    clip: {fileID: 8300000, guid: 61130a58b3d4b0947b6a4a080820f0f4, type: 3}
+    volume: 0.1
     pitch: 1
     loop: 0
     source: {fileID: 0}
