@@ -15,7 +15,7 @@ public class GenerateMonster : MonoBehaviour
     // Update is called once per frame
     IEnumerator MonsterDrop()
     {
-        xPos = Random.Range(130, 600);
+        xPos = Random.Range(130, 300);
         zPos = Random.Range(-170, 185);
 
 
@@ -34,7 +34,7 @@ public class GenerateMonster : MonoBehaviour
                 nextSpawn = Time.time + spawnRate;
                 foreach (GameObject monster in monsters)
                 {
-                    Instantiate(monster, new Vector3(xPos, 10, zPos), Quaternion.identity);
+                    Instantiate(monster, new Vector3(xPos, 40, zPos), Quaternion.identity);
                     StartCoroutine(MonsterDrop());
                    
                 }

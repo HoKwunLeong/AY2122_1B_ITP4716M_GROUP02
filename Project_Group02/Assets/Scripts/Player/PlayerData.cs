@@ -25,7 +25,7 @@ public class PlayerData : MonoBehaviour
     public static int MaxAmount;
     public static int CurrentAmount;
     public static int Skill = 0;
-    public static int Key = 0;
+    public static int Key = 2;
 
     public WeaponsDataScriptableObjects[] weapons;
 

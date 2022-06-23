@@ -34,7 +34,6 @@ public class BossMovement : MonoBehaviour
         bar.SetHealth(enemdata.GetHealth());
 
 
-      
 
     }
 
@@ -107,7 +106,6 @@ public class BossMovement : MonoBehaviour
     }
 
 
-
     IEnumerator WaitForSpawn()
     {
         yield return new WaitForSeconds(2);
@@ -117,20 +115,14 @@ public class BossMovement : MonoBehaviour
 
     private void LateUpdate()
     {
-        if(updateTime > 2)
+        bar.SetHealth(enemdata.GetHealth() - PlayerData.AttackStats);
+        if (updateTime > 2)
         {
             agent.destination = player.transform.position;
             updateTime = 0;
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag =="Weapon")
-        {
-            bar.SetHealth(enemdata.GetHealth() - PlayerData.AttackStats);
-        }
-    }
 
 
 

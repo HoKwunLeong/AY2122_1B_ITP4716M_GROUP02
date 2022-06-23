@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &375924018
 Transform:
@@ -114,7 +114,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1747669147
 Transform:
@@ -124,7 +124,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747669146}
   m_LocalRotation: {x: -0, y: -0.000000089406946, z: -0.71718925, w: 0.69687855}
-  m_LocalPosition: {x: 0.363, y: -0.01, z: -0}
+  m_LocalPosition: {x: 0.36, y: -0.01, z: 0.0822}
   m_LocalScale: {x: 0.09082821, y: 0.09082821, z: 0.09082821}
   m_Children: []
   m_Father: {fileID: 4818642717204569754}
@@ -211,7 +211,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1973752509
 Transform:
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 4996175854925855095}
   m_Layer: 0
   m_Name: Pyramid2
-  m_TagString: Finish
+  m_TagString: FirstStage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -319,7 +319,7 @@ Transform:
   m_GameObject: {fileID: 5302023920032941088}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 6.39, y: 0.0000009536743, z: 0}
-  m_LocalScale: {x: 14.410501, y: 14.410501, z: 14.410501}
+  m_LocalScale: {x: 153.26572, y: 224.00374, z: 238.15137}
   m_Children:
   - {fileID: 1747669147}
   - {fileID: 1973752509}
@@ -388,5 +388,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.29, y: 0.79, z: 0.53}
-  m_Center: {x: 0.71, y: 0, z: 0.3}
+  m_Size: {x: 0.3616313, y: 0.79, z: 0.53000003}
+  m_Center: {x: 0.74581844, y: 1.4681038e-11, z: 0.3}

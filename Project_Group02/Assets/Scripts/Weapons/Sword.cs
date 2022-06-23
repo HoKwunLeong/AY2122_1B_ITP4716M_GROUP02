@@ -63,6 +63,7 @@ public class Sword : MonoBehaviour
             {
                 other.transform.gameObject.GetComponent<BossMovement>().GetComponent<Animator>().SetTrigger("hurt");
                 other.transform.gameObject.GetComponent<BossMovement>().SetHurtStats(true);
+                Debug.Log(other.transform.gameObject.GetComponent<EnemiesData>().GetHealth());
             }
 
             if (other.transform.gameObject.GetComponent<EnemiesData>().GetHealth() <= 0)
