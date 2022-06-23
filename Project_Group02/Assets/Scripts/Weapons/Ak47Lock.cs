@@ -117,6 +117,7 @@ public class Ak47Lock : MonoBehaviour
             {
                 hit.transform.gameObject.GetComponent<BossMovement>().GetComponent<Animator>().SetTrigger("hurt");
                 hit.transform.gameObject.GetComponent<BossMovement>().SetHurtStats(true);
+                hit.transform.gameObject.GetComponent<BossMovement>().SetHealth(Weapon.attack);
                 Debug.Log(hit.transform.gameObject.GetComponent<EnemiesData>().GetHealth());
             }
 

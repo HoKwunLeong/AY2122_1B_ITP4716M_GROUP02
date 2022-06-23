@@ -50,11 +50,15 @@ public class BossMovement : MonoBehaviour
         this.getHurtStats = getHurtStats;
     }
 
+    public void SetHealth(int damge)
+    {
+        bar.SetHealth(enemdata.GetHealth() - damge);
+    }
+
 
     // Update is called once per frame
     void Update()
     {
-        bar.SetHealth(enemdata.GetHealth());
         int randomTimer = Random.Range(0, 500);
         updateTime += Time.deltaTime;
         float dist = Vector3.Distance(this.transform.position, player.transform.position);
