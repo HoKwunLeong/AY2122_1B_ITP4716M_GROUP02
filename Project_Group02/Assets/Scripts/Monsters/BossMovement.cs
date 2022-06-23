@@ -54,7 +54,7 @@ public class BossMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        bar.SetHealth(enemdata.GetHealth());
         int randomTimer = Random.Range(0, 500);
         updateTime += Time.deltaTime;
         float dist = Vector3.Distance(this.transform.position, player.transform.position);
@@ -95,7 +95,7 @@ public class BossMovement : MonoBehaviour
         {
             anim.SetTrigger("idle");
         }
-      
+
     }
 
 
@@ -115,7 +115,7 @@ public class BossMovement : MonoBehaviour
 
     private void LateUpdate()
     {
-        bar.SetHealth(enemdata.GetHealth() - PlayerData.AttackStats);
+ 
         if (updateTime > 2)
         {
             agent.destination = player.transform.position;
