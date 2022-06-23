@@ -30,8 +30,8 @@ public class BossMovement : MonoBehaviour
         enemdata = GetComponent<EnemiesData>();
         isWalking = false;
         isAttacking = false;
-        bar.SetMaxHealth(enemdata.GetMaxHealth());
-        bar.SetHealth(enemdata.GetHealth());
+        bar.SetMaxHealth(100);
+        bar.SetHealth(100);
 
 
 
