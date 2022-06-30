@@ -15,6 +15,6 @@ MonoBehaviour:
   Name: LightingBall
   Descriptions: 
   Health: 1
-  AttackDamage: 5
+  AttackDamage: 10
   Defend: 0
   Experience: 0

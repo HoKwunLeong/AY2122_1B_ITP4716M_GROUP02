@@ -68,6 +68,18 @@ public class Player : MonoBehaviour
             Frontsign.SetActive(false);
             Time.timeScale = 0;
         }
+        else if (Input.GetKeyDown(KeyCode.Escape) && isOption == true)
+        {
+            OptionPanel.SetActive(false);
+            SettingPanel.SetActive(false);
+            isOption = false;
+            isSetting = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            Frontsign.SetActive(true);
+            Time.timeScale = 1;
+
+        }
         else if (Input.GetKeyDown(KeyCode.Escape) && isOption == true && isSetting == false)
         {
             OptionPanel.SetActive(false);
