@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CrossbowLock : MonoBehaviour
 {
@@ -100,6 +101,10 @@ public class CrossbowLock : MonoBehaviour
                 hit.transform.gameObject.GetComponent<BossMovement>().SetHurtStats(true);
                 hit.transform.gameObject.GetComponent<BossMovement>().SetHealth(Weapon.attack);
                 Debug.Log(hit.transform.gameObject.GetComponent<EnemiesData>().GetHealth());
+                if (hit.transform.gameObject.GetComponent<EnemiesData>().GetHealth() <= 0)
+                {
+                    SceneManager.LoadScene("VictoryScene");
+                }
             }
    
 

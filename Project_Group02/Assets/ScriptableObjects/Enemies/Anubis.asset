@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Anubis
   Descriptions: 
-  Health: 500
+  Health: 1
   AttackDamage: 5
   Defend: 0
   Experience: 10

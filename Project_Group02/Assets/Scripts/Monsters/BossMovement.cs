@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using UnityEngine.SceneManagement;
 
 public class BossMovement : MonoBehaviour
 {
@@ -99,6 +99,7 @@ public class BossMovement : MonoBehaviour
         {
             anim.SetTrigger("idle");
         }
+
 
     }
 

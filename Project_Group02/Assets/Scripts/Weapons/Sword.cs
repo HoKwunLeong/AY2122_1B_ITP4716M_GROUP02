@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Sword : MonoBehaviour
 {
     Collider hitCollider;
@@ -65,6 +65,11 @@ public class Sword : MonoBehaviour
                 other.transform.gameObject.GetComponent<BossMovement>().SetHurtStats(true);
                 other.transform.gameObject.GetComponent<BossMovement>().SetHealth(Weapon.attack);
                 Debug.Log(other.transform.gameObject.GetComponent<EnemiesData>().GetHealth());
+                if (other.transform.gameObject.GetComponent<EnemiesData>().GetHealth() <= 0)
+                {
+                    
+                    SceneManager.LoadScene("VictoryScene");
+                }
             }
 
             if (other.transform.gameObject.GetComponent<EnemiesData>().GetHealth() <= 0)
